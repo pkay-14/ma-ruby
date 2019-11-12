@@ -1,0 +1,6 @@
+This is my text file
+Second line of my text file
+Third line of my text file
+forth line of my text file
+fifth line of my text file
+
