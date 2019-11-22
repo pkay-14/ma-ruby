@@ -1,10 +1,4 @@
-arr1 = ['boy', 'girl', 'animal', 'tree']
-arr2 = ['book', 'building', 'boy', 'street', 'animal']
+array = ARGV
 
-#puts arr1 & arr2
-
-arr1.each do |x|
-  if (arr2.include?(x))
-    print "#{x} "
-  end
-end
+arr = array.group_by{ |e| e }.select { |k, v| v.size > 1 }.map(&:first)
+puts "common elements are: #{arr.join " "}"

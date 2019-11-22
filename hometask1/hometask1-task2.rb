@@ -1,18 +1,9 @@
 require 'colorize'
 
-colour = ARGV[0]
-filename = ARGV[1]
+colour,filename = ARGV
 
- #filename.each{|filename| IO.readlines(filename).each{|line|puts line}}
-
- #file = '\mytext.txt'
-
-
-  path = File.expand_path(File.dirname(__FILE__))
-  path << filename
-
-  file = File.open(path, 'r')
-  file.each do|line|
-    puts line.colorize(:colour)
-  end
+    file = File.open(filename, 'r')
+    file.each do|line|
+      print line.red
+      end
     file.close
