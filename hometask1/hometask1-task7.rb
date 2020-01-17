@@ -1,5 +1,4 @@
 
 array = ARGV
 
-a = array.sample
-puts a
+puts array.sample

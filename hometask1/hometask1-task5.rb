@@ -7,7 +7,7 @@ def get_line_number(file, word)
 
   end
 
-  return line_num unless line_num.nil?
+   line_num unless line_num.nil?
 end
 
 b = get_line_number(filename, line)

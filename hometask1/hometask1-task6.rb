@@ -4,9 +4,6 @@ op = ARGV[2]
 
 
 class MyMath
-  def initialize(operator)
-    @operator = operator;
-  end
 
   def sum(a, b)
     puts a.to_f + b.to_f
@@ -26,10 +23,7 @@ class MyMath
   end
 end
 
-mth = MyMath.new(op)
-# op.each do|a|
-#   @b = a
-# end
+mth = MyMath.new
 
 if op == "sum"
   mth.sum(first, second)

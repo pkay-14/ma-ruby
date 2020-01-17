@@ -1,4 +1,8 @@
-array = ARGV
+first, second = ARGV
 
-arr = array.group_by{ |e| e }.select { |k, v| v.size > 1 }.map(&:first)
-puts "common elements are: #{arr.join " "}"
+  arr1 = first.split(',')
+  arr2 = second.split(',')
+
+  puts "#{arr1} "
+  puts "#{arr2} "
+puts arr1 & arr2
